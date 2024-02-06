@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: d59ea353-f0bf-4d50-9a71-4cd35dbeba22
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: d59ea353-f0bf-4d50-9a71-4cd35dbeba22 
+  name: d59ea353-f0bf-4d50-9a71-4cd35dbeba22
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: d59ea353-f0bf-4d50-9a71-4cd35dbeba22 
